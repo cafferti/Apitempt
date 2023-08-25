@@ -8,16 +8,22 @@
   <body>
     <form>
       <label for="name">Name:</label>
-      <input class="name" type="text" id="name" /><br /><br />
+      <input class="name" type="text" id="name" required /><br /><br />
 
       <label for="email">Email:</label>
-      <input class="email" type="email" id="email" /><br /><br />
+      <input class="email" type="email" id="email" required /><br /><br />
+
+      <label  for="phone">phone</label> 
+      <input class="phone" id="phone" type="text" required > <br> <br>
+
+      <label for="password">password</label> 
+      <input class="password" id="password" type="text" required> <br> <br>
 
       <input
         class="email"
         type="submit"
         value="Submit"
-        onclick="submitForm(event)"
+        onclick="validatevalue(event)"
       />
       <p class="err"></p>
     </form>
