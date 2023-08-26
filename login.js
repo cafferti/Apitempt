@@ -35,7 +35,7 @@ const validatuser = async (data) =>{
 }
 
  const userlogin = async (event) =>{
-    event.preventDefault
+    event.preventDefault()
     const userdata = await getinput()
     if(userdata !== null){
         validatuser(userdata)
